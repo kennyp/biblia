@@ -2,7 +2,7 @@ setup:
 	npm install
 
 test:
-	NODE_ENV='test' node_modules/.bin/mocha -R list -t 4000 test/*.test.js
+	mocha -R list -r should -u bdd --compilers coffee:coffee-script test/*.test.coffee
 
 publish: test
 	git push github master
