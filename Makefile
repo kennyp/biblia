@@ -4,10 +4,7 @@ setup:
 test:
 	@mocha -t 5000 -R list -r should -u bdd --compilers coffee:coffee-script test/*.test.coffee
 
-build:
-	@find . -name '*.coffee' | xargs -n1 -P3 coffee -c
-
-publish: test build
+publish: test
 	@git push
 	@npm prune
 	@npm publish
