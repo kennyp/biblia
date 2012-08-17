@@ -2,7 +2,7 @@
   "author": "Kenny Parnell <k.parnell@gmail.com> (http://blog.kennethparnell.com)",
   "name": "biblia",
   "description": "Access the Biblia API",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/kparnell/biblia",
   "repository": {
     "type": "git",
@@ -12,12 +12,13 @@
   "scripts": {
     "test": "make test"
   },
-  "dependencies": {},
+  "dependencies": {
+      "superagent": "*"
+  },
   "devDependencies": {
       "coffee-script": "*",
       "mocha": "*",
-      "should": "*",
-      "superagent": "*"
+      "should": "*"
   },
   "optionalDependencies": {},
   "engines": {
