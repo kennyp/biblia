@@ -2,7 +2,7 @@
   "author": "Kenny Parnell <k.parnell@gmail.com> (http://blog.kennethparnell.com)",
   "name": "biblia",
   "description": "Access the Biblia API",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/kparnell/biblia",
   "repository": {
     "type": "git",
