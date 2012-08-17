@@ -7,7 +7,7 @@ build:
 test:
 	@mocha -t 5000 -R list -r should -u bdd --compilers coffee:coffee-script test/*.test.coffee
 
-publish: test
+publish: test build
 	@git push
 	@npm prune
 	@npm publish
