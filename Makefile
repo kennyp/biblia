@@ -1,6 +1,9 @@
 setup:
 	@npm install
 
+build:
+	@find . -name '*.coffee' | xargs -n1 -P2 coffee -c
+
 test:
 	@mocha -t 5000 -R list -r should -u bdd --compilers coffee:coffee-script test/*.test.coffee
 
