@@ -16,7 +16,8 @@
   "devDependencies": {
       "coffee-script": "*",
       "mocha": "*",
-      "should": "*"
+      "should": "*",
+      "superagent": "*"
   },
   "optionalDependencies": {},
   "engines": {
